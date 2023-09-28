@@ -25,6 +25,9 @@ def playGame():
 
         elif guessed_number > correct_ans:
             print(" Correct answer is smaller!")
+        
+        attempts_left = iterate_times - (i + 1)
+        print(f"Attempts left: {attempts_left}")
 
     if not win:
         print("You lose!")
